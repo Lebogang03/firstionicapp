@@ -8,8 +8,29 @@
 
 <ion-content>
 
-    <ion-input type="text" [(ngModel)]="name">name</ion-input>
-    <ion-input type="text" [(ngModel)]="surname">surname</ion-input>
-    <ion-input type="number" [(ngModel)]="age">age</ion-input>
+
+    <ion-item>
+        <ion-label position="floating">name</ion-label>
+        <ion-input type="text" formcontrol="surname" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">surname</ion-label>
+        <ion-input type="text" formcontrol="surname" [(ngModel)]="surname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">age</ion-label>
+        <ion-input type="number" formcontrol="surname" [(ngModel)]="age"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select placeholder="Select One" [(ngModel)]="gender">
+            <ion-select-option value="Female">Female</ion-select-option>
+            <ion-select-option value="Male">Male</ion-select-option>
+        </ion-select>
+    </ion-item>
+
     <ion-button color="secondary" expand="full" (click)="nextPage()">Secondary</ion-button>
 </ion-content>

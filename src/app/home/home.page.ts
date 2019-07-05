@@ -10,6 +10,7 @@ export class HomePage {
 name;
 surname;
 age;
+gender;
 
   constructor(private route:Router) {}
 nextPage()
@@ -19,6 +20,7 @@ nextPage()
   console.log(this.name);
   console.log(this.surname);
   console.log(this.age);
+  console.log(this.gender);
 }
 
 

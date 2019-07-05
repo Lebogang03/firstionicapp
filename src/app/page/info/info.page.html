@@ -1,9 +1,36 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>info</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>info</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+    <form [formGroup]="info" (ngSubmit)="submit(info)">
+        <ion-item>
+            <ion-label position="floating">name</ion-label>
+            <ion-input type="text" formControlName="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">surname</ion-label>
+            <ion-input type="text" formControlName="surname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">age</ion-label>
+            <ion-input type="number" formControlName="age"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>gender</ion-label>
+            <ion-select placeholder="Select One" formControlName="gender">
+                <ion-select-option value="Female">Female</ion-select-option>
+                <ion-select-option value="Male">Male</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-button color="secondary" expand="full" disabled type="submit">Secondary</ion-button>
+    </form>
 
 </ion-content>
