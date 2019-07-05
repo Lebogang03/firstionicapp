@@ -14,7 +14,7 @@ age;
   constructor(private route:Router) {}
 nextPage()
 {
-  this.route.navigateByUrl('details')
+  this.route.navigateByUrl('tabs/details')
 
   console.log(this.name);
   console.log(this.surname);

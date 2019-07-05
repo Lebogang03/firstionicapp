@@ -1,9 +1,27 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tabs</ion-title>
-  </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="details">
+                <ion-icon name="albums"></ion-icon>
+                <ion-label>Schedule</ion-label>
 
+            </ion-tab-button>
+
+            <ion-tab-button tab="display">
+                <ion-icon name="desktop"></ion-icon>
+                <ion-label>Speakers</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="info">
+                <ion-icon name="locate"></ion-icon>
+                <ion-label>Map</ion-label>
+            </ion-tab-button>
+
+
+        </ion-tab-bar>
+    </ion-tabs>
 </ion-content>
